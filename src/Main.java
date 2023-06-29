@@ -18,7 +18,6 @@ public class Main {
 		System.out.printf("Qual o segundo valor: %d%n", valorB);
 		System.out.printf("O valor total é de: %d%n", soma);
 		
-		
 		sc.close();
 	}
 
