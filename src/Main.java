@@ -37,6 +37,8 @@ public class Main {
 		System.out.printf("O valor da area é %.4f%n", area );
 		System.out.printf("O valor da raio ao quadrado * pi é : %.4f%n", raioQuad);
 		
+		
+		sc.close();
 	}
 
 }
