@@ -1,5 +1,7 @@
 
+import java.util.Locale;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
@@ -100,7 +102,7 @@ public class Main {
 		
 		
 		
-		----------- Exercicio 04 -----------
+		----------- Exercicio 05 -----------
 		
 		Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o
 		código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
@@ -135,7 +137,90 @@ public class Main {
 		sc.close();
 		
 		
+		
+		
+		------------ Exercicio 06 -----------
+		
+		* Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e
+		* mostre:
+		* a) a área do triângulo retângulo que tem A por base e C por altura.
+		* b) a área do círculo de raio C. (pi = 3.14159)
+		* c) a área do trapézio que tem A e B por bases e C por altura.
+		* d) a área do quadrado que tem lado B.
+		* e) a área do retângulo que tem lados A e B.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double A, B, C, tri, circ, trap, quad, ret, pi;
+		
+		pi = 3.14159;
+		
+		System.out.println("Informe os dados: ");
+		
+		
+		System.out.println("O valor de A: ");
+		A = sc.nextDouble();
+		System.out.println("O valor de B: ");
+		B = sc.nextDouble();
+		System.out.println("O valor de C: ");
+		C = sc.nextDouble();
+		
+		
+		tri = (A * C)/2;
+		circ = (C * C)* pi;
+		trap = ((A + B )* C)/2;
+		quad = B * B;
+		ret = A * B;
+		
+		System.out.printf("Triângulo retêngulo: %.3f%n", tri);
+		System.out.printf("Circulo : %.3f%n", circ);
+		System.out.printf("Trapézio: %.3f%n", trap);
+		System.out.printf("Quadrado: %.3f%n", quad);
+		System.out.printf("Retângulo: %.3f%n", ret);
+		
+		sc.close();
+		
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double ret, valorConta, conta = 0;
+		
+		System.out.println("Digite o valor da retirada.");
+		ret = sc.nextDouble();
+		
+		System.out.println("Digite o valor da que está na sua conta.");
+		valorConta = sc.nextDouble();
+		
+		if (ret <= valorConta) {
+			conta += ret - valorConta;
+			System.out.printf("O valor da conta será: R$ %.2f%n", conta);
+		} else {
+			System.out.println("A retirada é maior que o valor que você possui");
+		}
+				
+		sc.close();
+		
 		*/
+		
+		String[] paises = { "Brasil", "Russia","India", "China", "Africa do sul" };
+		
+		System.out.println(paises[0]); // Brasil
+		System.out.println(Arrays.toString(paises));
+		
+		int posicao = Arrays.binarySearch(paises, "BRASIL");//index
+		System.out.println(posicao); // Quando não existe, retorna -2 ou -1(se tiver em letra com formato diferente);
+		
+		Arrays.sort(paises, 0, paises.length); // ordenando a partir do índice ZERO.
+		System.out.println(Arrays.toString(paises));
+		//Acentos, não utilizar, pois o código é gerado de maneira errada.
+		
+		
+		String[][] duasDim = { { "Carlos", "M", "SP" }, { "Lidiane", "F", "MG"}};
+		
+		System.out.println(duasDim[1][2]); // MG
+		System.out.println(duasDim[0][2]); // SP
 		
 	}
 
