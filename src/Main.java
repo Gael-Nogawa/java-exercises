@@ -74,10 +74,68 @@ public class Main {
 		System.out.printf("A diferença é: %d%n", dif);
 		
 		sc.close();
+		
+		----------- Exercicio 04 -----------
+		
+		* Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
+		* hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas
+		* decimais.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int numFunc;
+		double horasTrab, valorHora, salario;
+		
+		numFunc = sc.nextInt();
+		horasTrab = sc.nextDouble();
+		valorHora = sc.nextDouble();
+		salario = horasTrab * valorHora;
+		
+		System.out.printf("Número do funcionário: %d%n", numFunc);
+		System.out.printf("Salário: R$ %.2f%n", salario);
+		
+		
+		
+		sc.close();
+		
+		
+		
+		----------- Exercicio 04 -----------
+		
+		Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o
+		código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int codPeca1, qtdPeca1, codPeca2, qtdPeca2;
+		double valorUnit1, valorUnit2, soma;
+		
+		codPeca1 = sc.nextInt();
+		qtdPeca1 = sc.nextInt();
+		valorUnit1 = sc.nextDouble();
+		
+		codPeca2 = sc.nextInt();
+		qtdPeca2 = sc.nextInt();
+		valorUnit2 = sc.nextDouble();
+		
+		soma = (qtdPeca1 * valorUnit1)+(qtdPeca2 * valorUnit2);
+		
+		System.out.printf("-----//-----//-----//-----");
+		System.out.printf("O código do produto 1: %d%n", codPeca1);
+		System.out.printf("Quantidade da peça 1: %d%n", qtdPeca1);
+		System.out.printf("Valor unitário 1: R$ %.2f%n", valorUnit1);
+		
+		System.out.printf("O código do produto 2: %d%n", codPeca2);
+		System.out.printf("Quantidade da peça 2: %d%n", qtdPeca2);
+		System.out.printf("Valor unitário 2: R$ %.2f%n%n", valorUnit2);
+		
+		
+		System.out.printf("O valor total a pagar: R$ %.2f%n", soma);
+		
+		sc.close();
+		
+		
 		*/
-		
-		
-		
 		
 	}
 
