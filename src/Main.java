@@ -202,7 +202,7 @@ public class Main {
 				
 		sc.close();
 		
-		*/
+		----------- Arrays -----------
 		
 		String[] paises = { "Brasil", "Russia","India", "China", "Africa do sul" };
 		
@@ -221,6 +221,78 @@ public class Main {
 		
 		System.out.println(duasDim[1][2]); // MG
 		System.out.println(duasDim[0][2]); // SP
+		
+		
+		
+		----------- Switch -----------
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		String dia;
+		
+		System.out.println("Informe o dia da semana: ");
+		x = sc.nextInt();
+		
+		switch (x) {
+			
+		case 1:
+			dia = "Domingo";
+			break;
+		
+		case 2:
+			dia = "Segunda";
+			break;
+			
+		case 3:
+			dia = "Terça";
+			break;
+			
+		case 4:
+			dia = "Quarta";
+			break;
+			
+		case 5:
+			dia = "Quinta";
+			break;
+			
+		case 6:
+			dia = "Sexta";
+			break;
+			
+		case 7:
+			dia = "Sábado";
+			break;
+			
+		default:
+			dia = "Valor inválido";
+			break;
+		
+		
+		}
+		
+		System.out.printf("O dia da semana é: %s%n%n%n", dia);
+		
+		System.out.println("Fim do programa!");
+		
+		sc.close();
+		
+		*/
+		
+		
+		Scanner sc = new Scanner(System.in);
+
+		
+		System.out.println("Digite o valor do produto: ");
+		double preco = sc.nextDouble();
+		
+		double desc = (preco < 50) ? preco * 0.1 : preco * 0.05;
+		double total = preco - desc;
+		
+		System.out.printf("O valor do preço é: %.2f%n", desc);
+		System.out.printf("O valor total à pagar é: %.2f%n%n", total);
+		
+		sc.close();
 		
 	}
 
