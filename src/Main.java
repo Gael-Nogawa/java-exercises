@@ -277,8 +277,9 @@ public class Main {
 		
 		sc.close();
 		
-		*/
 		
+		
+		---------- Ternary Function -----------
 		
 		Scanner sc = new Scanner(System.in);
 
@@ -293,6 +294,7 @@ public class Main {
 		System.out.printf("O valor total à pagar é: %.2f%n%n", total);
 		
 		sc.close();
+		*/
 		
 	}
 
