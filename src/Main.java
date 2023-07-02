@@ -6,8 +6,6 @@ import java.util.Arrays;
 public class Main {
 
 	public static void main(String[] args)	{
-		
-		
 		/*
 		------------ Exercicio 01 ----------- 
 		
@@ -278,8 +276,8 @@ public class Main {
 		sc.close();
 		
 		
+		----------- Funções Ternárias -----------
 		
-		---------- Ternary Function -----------
 		
 		Scanner sc = new Scanner(System.in);
 
@@ -294,6 +292,116 @@ public class Main {
 		System.out.printf("O valor total à pagar é: %.2f%n%n", total);
 		
 		sc.close();
+		
+		----------- Exercicio 07 -----------
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int cod, qtde;
+		double total, codValor;
+		
+		System.out.println("Cod  Especificações      Preço");
+		System.out.println("1   Cachorro-quente   R$ 4,00");
+		System.out.println("2   X-Salada          R$ 4,50");
+		System.out.println("3   X-Bacon           R$ 5,00");
+		System.out.println("4   Torrada Simples   R$ 2,00");
+		System.out.println("5   Refrigerante      R$ 1,50");
+		System.out.println("-----------------------------");
+		
+		System.out.println("Digite o código: ");
+		cod = sc.nextInt();
+		
+		
+		if ( cod == 1) {
+			codValor = 4.00;
+		} else if ( cod == 2 ) {
+			codValor = 4.50;
+		} else if ( cod == 3 ) {
+			codValor = 5.00;
+		} else if ( cod == 4 ) {
+			codValor = 2.00;
+		} else {
+			codValor = 1.50;
+		}
+		
+		System.out.printf("O valor unitário é: R$ %.2f%n", codValor);
+		
+		System.out.println("Digite a quantidade: ");
+		qtde = sc.nextInt();
+		
+		total = (double)codValor * qtde;
+		
+		System.out.printf("A quantidade é de R$ %.2f%n%n", total);
+		
+		sc.close();
+		
+		
+		
+		----------- Exercicio 08 -----------
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int A, B;
+		double divResto;
+		
+		System.out.println("Digite o valor de A: ");
+		A = sc.nextInt();
+		
+		System.out.println("Digite o valor de B: ");
+		B = sc.nextInt();
+		
+		divResto = 0;
+	
+		
+		if ( A % B == 0 ) {
+			divResto = A/B;
+			System.out.printf("São multiplos, e o multiplicado pelo número: %.0f", divResto);
+			
+		} else if ( B % A == 0 ){
+			divResto = B/A;
+			System.out.printf("São multiplos, o o multiplicado pelo número:  %.0f", divResto);
+			
+		} else {
+			System.out.println("Não são multiplos");
+		}
+		
+		sc.close();
+		
+		
+		------------ Exercicio 09 -----------
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int planoBas, qtdeMin;
+		double valorPlanoBas, valorMin, totalAMais, soma;
+		
+		planoBas = 100;
+		
+		valorPlanoBas = 50.00;
+		valorMin = 2.00;
+		soma = 0;
+		totalAMais = 0;
+		
+		
+		System.out.println("Quantos minutos foram falados?");
+		qtdeMin = sc.nextInt();
+		
+		if ( qtdeMin <= planoBas ) {
+			System.out.println("VOcê está dentro do plano básico.");
+		} else if ( qtdeMin > planoBas ){
+			totalAMais = qtdeMin - planoBas;
+			soma = totalAMais * valorMin;
+			soma += planoBas;
+			System.out.printf("O valor a ser pago é de R$ %.2f", soma);
+			
+		} else {
+			System.out.println("O valor digitado não é valido");
+		}
+		
+		sc.close();
+		
 		*/
 		
 	}
