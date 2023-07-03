@@ -1,7 +1,5 @@
-
-import java.util.Locale;
-import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Scanner;
+ 
 
 public class Main {
 
@@ -372,37 +370,83 @@ public class Main {
 		
 		------------ Exercicio 09 -----------
 		
+		
+		
 		Scanner sc = new Scanner (System.in);
 		
-		int planoBas, qtdeMin;
-		double valorPlanoBas, valorMin, totalAMais, soma;
 		
-		planoBas = 100;
+		double valorPlano, qtdeMin, totalAMais, soma;
 		
-		valorPlanoBas = 50.00;
-		valorMin = 2.00;
-		soma = 0;
-		totalAMais = 0;
+		
+		
+		valorPlano = 50.00;
 		
 		
 		System.out.println("Quantos minutos foram falados?");
 		qtdeMin = sc.nextInt();
 		
-		if ( qtdeMin <= planoBas ) {
-			System.out.println("VOcê está dentro do plano básico.");
-		} else if ( qtdeMin > planoBas ){
-			totalAMais = qtdeMin - planoBas;
-			soma = totalAMais * valorMin;
-			soma += planoBas;
-			System.out.printf("O valor a ser pago é de R$ %.2f", soma);
+		if ( qtdeMin <= 100 ) {
+			System.out.println("Você está dentro do plano básico.");
+		} else if ( qtdeMin > 100 ){
+			totalAMais = ( qtdeMin - 100 ) * 2.00;
+			soma = valorPlano + totalAMais;
+			System.out.printf("O valor a mais é : R$ %.2f.%n", totalAMais );
+			System.out.printf("O valor total a ser pago é de R$ %.2f.", soma);
 			
 		} else {
 			System.out.println("O valor digitado não é valido");
+			soma = 0;
+			totalAMais = 0;
 		}
 		
 		sc.close();
 		
+		
+		----------- While -----------
+		
+		
+		int x = 5; 	
+		int y = 0;
+		
+		while ( x > 2) {
+			System.out.println(x);
+			y += x;
+			x = x -1; 
+		
+		}
+		// x = 5, 4 ,3, 2
+		// y = 0, 5, 9, 12
+	
+		----------- -----------
+	
+		int x = 2;
+		int y = 0;
+		
+		while ( x < 60) {
+			System.out.println(x);
+			x = x *2;
+			y = y + 10;
+			
+		}
+		// x = 2, 4, 8,16, 32 
+		// y = 0, 10, 20, 30, 40
+	 
+		  
+		----------- -----------
+		
+		
+		int x = 100;
+		int y = 100;
+		
+		while ( x != y ) {
+			System.out.print("Olha!");
+			x = (int)Math.sqrt(y);
+		}
+	
+		----------- -----------
 		*/
+		
+		
 		
 	}
 
