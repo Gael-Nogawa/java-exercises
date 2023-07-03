@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+import java.util.Scanner;
  
 
 public class Main {
@@ -444,6 +444,75 @@ public class Main {
 		}
 	
 		----------- -----------
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um número diferente de zero.");
+		int x = sc.nextInt();
+		int soma = 0;
+		
+		while ( x != 0) {
+			soma += x;
+			x = sc.nextInt();
+			
+		}
+		System.out.printf("O valor total é de : %.d.%n", soma);
+		System.out.println("Fim do programa");
+		
+		sc.close();
+		
+		---------- -----------
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um valor: ");
+		int x = sc.nextInt();
+
+		if ( x % 2 == 0 ) {
+			System.out.printf("O valor de %d é par %n", x);
+		} else {
+			System.out.printf("O valor de %d é ímpar %n", x);
+		}
+		
+		----------- -----------
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite quantos valores você vai digitar:");
+		int x = sc.nextInt();
+		
+		int y = 0;
+		int soma = 0;
+		int contador;
+		
+		for (contador = 0; contador < x;  contador++) {
+			y = sc.nextInt();
+			soma += y;
+			
+		}
+		System.out.printf("o valor da soma é %d%n", soma);
+		
+		System.out.println("Fim do programa");
+		
+		----------- Do While -----------
+		
+		Scanner sc = new Scanner(System.in); 
+			char resp;
+			
+			do {
+				System.out.println("Digite a temperatura em Celsius: ");
+				double C = sc.nextDouble();
+				double F = 9.0 * C / 5.0 + 32.0;
+				
+				System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
+				System.out.print("Deseja repetir (s/n)? ");
+				resp = sc.next().charAt(0);
+				
+			} while (resp != 'n');
+		
+			System.out.println("Fim do programa");
+			sc.close();
+		
 		*/
 		
 		
