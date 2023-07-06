@@ -513,9 +513,23 @@ public class Main {
 			System.out.println("Fim do programa");
 			sc.close();
 		
+		
+		----------- Bitwise -----------
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int mask = 0b100000; // => 32
+		
+		if (( n & mask) != 0 ) {
+			System.out.println("6th número é true!");
+		} else {
+			System.out.println("6th número é false");
+		}
+			
+		sc.close();
 		*/
-		
-		
 		
 	}
 
