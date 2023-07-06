@@ -1,7 +1,9 @@
 # java-exercises
 
 
-Exercícios de lógica de programação e estruturas sequenciais.
+Exercícios de lógica de programação.
+Estruturas sequenciais.
+Técnicas de bitwise.
 
 
 IDE: Eclipse
