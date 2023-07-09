@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-
+	/*
 	public static void main(String[] args) {
 	
-    /*	Funções matemáticas do Java;
+    	Funções matemáticas do Java;
 		 A = Math.sqrt(x) => A = raiz quadrada de x
 		 A = Math.pow(x, y) => A = x elevado a y
 		 A= Math.abs(x) => A = o valor absoluto de x
@@ -66,7 +66,7 @@ public class Main {
 		}
 		
 		sc.close();
-		*/
+		
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -101,5 +101,40 @@ public class Main {
 		System.out.println("O maior valor é :"+ value);
 	
 	}
+	*/
+	
+	public static void main (String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entre com as medidas do triângulo X:");
+		double xA = sc.nextDouble();
+		double xB = sc.nextDouble();
+		double xC = sc.nextDouble();
+		
+		System.out.println("Entre com as medidas do triângulo Y: ");
+		double yA = sc.nextDouble();
+		double yB = sc.nextDouble();
+		double yC = sc.nextDouble();
+		
+		// Fórmula de Heron
+		double p = (xA + xB + xC) /2.00;
+		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+		
+		p = (yA + yB + yC) /2.00;
+		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
+		System.out.printf("Triângulo X, área: %.2f%n", areaX);
+		System.out.printf("Triângulo Y, área: %.2f%n", areaY);
+		
+		if (areaX > areaY) {
+			System.out.println("A maior área: X");
+		} else {
+			System.out.println("A maior área: Y");
+		}
 
+		sc.close();
+		
+		
+		
+	}
 }
