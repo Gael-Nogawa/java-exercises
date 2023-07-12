@@ -558,6 +558,8 @@ public class Main {
 		System.out.println("IndexOf('bc'): "+ i );
 		System.out.println("LastIndexOf('bc'):" + j );
 		
+		
+		
 		*/
 		
 	}
