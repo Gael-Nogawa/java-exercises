@@ -10,10 +10,10 @@ public class Main {
 		 * Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
 		 * mensagem explicativa, conforme exemplos.
 
-		 
+		*/ 
 		 
 		Scanner sc = new Scanner(System.in);
-		
+		/*
 		int valorA, valorB, soma;
 		
 		valorA = sc.nextInt();
@@ -561,6 +561,7 @@ public class Main {
 		
 		
 		*/
+		sc.close();
 		
 	}
 
